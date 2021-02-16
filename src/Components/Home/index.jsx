@@ -3,7 +3,6 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 
 // application
 import MainPage from "./MainPage";
-import Signup from "./Signup";
 
 import './index.css'
 
@@ -13,6 +12,7 @@ const Home = () => {
         <div className="app-body">
             <Switch>
                 <Route exact path="/" component={MainPage}/>
+
             </Switch>
         </div>
     );

@@ -11,6 +11,7 @@ export const initialState = {
     email: '',
     name: '',
     imageUrl: '',
+    expires_in: 0,
 };
 
 const UserReducer = handleActions({

@@ -2,8 +2,7 @@ import React from 'react'
 
 // application
 import Navigation from "../Navigation";
-import SigninButton from "../UserButtons/SignInButton";
-import SignupButton from "../UserButtons/SignupButton";
+import LoginButton from "../LoginButton/LoginButton";
 
 
 // style
@@ -19,8 +18,7 @@ const NavPanel = () => {
                     </div>
                     <div className="col">
                         <div className="row mt-2">
-                            <SigninButton/>
-                            <SignupButton/>
+                            <LoginButton/>
                         </div>
                     </div>
                 </div>

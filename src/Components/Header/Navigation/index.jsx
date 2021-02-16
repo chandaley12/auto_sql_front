@@ -1,11 +1,16 @@
 import React from 'react';
-import {Button} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
 const Navigation = () => {
     return (
         <div className="mt-2">
-            <Button className="mr-3" href="/">홈으로</Button>
-            <Button className="mr-3" href="/vuerd-backoffice">Vuerd</Button>
+                <Link className="btn btn-primary mr-3"
+                    to="/">홈으로
+                </Link>
+                <Link className="btn btn-primary mr-3"
+                    to="/vuerd-backoffice">
+                    Vuerd
+                </Link>
         </div>
     );
 };
