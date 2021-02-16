@@ -1,0 +1,25 @@
+import {createAction, handleActions} from 'redux-actions'
+
+const LOGIN = 'User/LOGIN';
+const LOGOUT = 'User/LOGOUT';
+
+export const login = createAction(LOGIN);
+export const logout = createAction(LOGOUT);
+
+export const initialState = {
+    id: 0,
+    email: '',
+    name: '',
+    imageUrl: '',
+};
+
+const UserReducer = handleActions({
+    [LOGIN] : (state, action) => {
+        return Object.assign({}, state, action.payload);
+    },
+    [LOGOUT] : (state) => {
+        return initialState
+    },
+}, initialState);
+
+export default UserReducer;

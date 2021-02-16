@@ -1,13 +1,24 @@
+// react
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
+// 3rd Party
+import {Provider} from "react-redux";
+
+// application
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import store from "./Store";
+
+// style
+import 'normalize.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
